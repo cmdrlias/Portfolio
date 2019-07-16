@@ -4,6 +4,16 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+/*first segment*/
+
+.page1 {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
 }
 
 .left-half, .right-half {
@@ -32,9 +42,10 @@ html, body {
 
 .backend {
     left: -50%;
-    background-color: #EDEDED;
+    background-color: #393D3F;
     text-align: right;
     z-index: 0;
+    color: #fff;
 }
 
 .frontend {
@@ -61,4 +72,168 @@ html, body {
     -ms-transition: opacity 2s linear;
     -o-transition: opacity 2s linear;
     transition: opacity 2s linear;
+}
+
+/*second segment*/
+
+.page2 {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* .bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+
+.bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #CECECE;
+} */
+
+.rect1 {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 50%;
+    height: 50%;
+}
+
+.rect1 .front {
+    background: #CAA8F5;
+}
+
+.rect1 .back {
+    background: #EBDFFB;
+}
+
+.rect2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.rect2 .front {
+    background: #87BCDE;
+}
+
+.rect2 .back {
+    background:#D3E6F3;
+}
+
+.rect3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.rect3 .front {
+    background: #B1DDF1;
+}
+
+.rect3 .back {
+    background:#E2F2F9;
+}
+
+.rect4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.rect4 .front {
+    background: #E0ACD5;
+}
+
+.rect4 .back {
+    background: #F3E0EF;
+}
+
+.rect1 .front, .rect1 .back,
+.rect2 .front, .rect2 .back,
+.rect3 .front, .rect3 .back,
+.rect4 .front, .rect4 .back  {
+    width: 100%;
+    height: 100%;
+}
+
+.rect1 .back,
+.rect2 .back,
+.rect3 .back,
+.rect4 .back {
+    position: absolute;
+    top: 0;
+}
+
+.flip .rect1:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip .rect2:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip .rect3:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip .rect4:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }

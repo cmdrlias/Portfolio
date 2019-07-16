@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
+        <meta charset="utf-8">
+        <title>Portfólio</title>
+        <!-- css files -->
         <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -11,21 +14,29 @@
             <div class="backend">
                 <div class="content">
                     <div class="title">{</div>
-                    <div class="desc">
-                        <p>hi, i'm a back-end programmer.</p>
-                        <small>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
-                                Fusce sit amet ultricies augue. Proin nec eros eu nibh accumsan feugiat. Phasellus varius quis nulla 
-                                ut pharetra. Mauris justo mauris, vestibulum ut dapibus et, efficitur non augue. 
-                        </small>
+                    <div class="row desc">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <p>hi, i'm a back-end programmer.</p>
+                            <small>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
+                                    Fusce sit amet ultricies augue. Proin nec eros eu nibh accumsan feugiat. Phasellus varius quis nulla 
+                                    ut pharetra. Mauris justo mauris, vestibulum ut dapibus et, efficitur non augue. 
+                            </small>
+                            <div class="scroll-down d-flex justify-content-center">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
             <div class="right-half"></div>
             <div class="frontend">
-                    <div class="content">
-                        <div class="title"> /></div>
-                        <div class="desc">
+                <div class="content">
+                    <div class="title"> /></div>
+                    <div class="desc row">
+                        <div class="col-sm-6">
                             <p>hi, i'm a front-end programmer.</p>
                             <small>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
@@ -34,12 +45,38 @@
                             </small>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
+        <div class="page2"> 
+            <!-- <div class="bg-left"></div>
+            <div class="bg-right"></div> -->
+            <div class="flip">
+                <div class="rect1 flipper">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                </div>
+                <div class="rect2 flipper">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+                <div class="rect3 flipper">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+                <div class="rect4 flipper">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- scripts -->
         <script src="assets/jquery/dist/jquery.min.js"></script>
         <script src="assets/jquery/dist/core.js"></script>
         <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/scrolling.js"></script>
     </body>
 </html>
