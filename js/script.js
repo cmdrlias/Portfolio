@@ -65,6 +65,7 @@ $(function() {
 });
 
 function loadProgress(load) {
+    $('.circle-wrap').css('display', 'block');
     if(load == 0) {
         loadCircle($('.html'), 1);
         loadCircle($('.css'), 1);

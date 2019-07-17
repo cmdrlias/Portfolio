@@ -172,14 +172,18 @@ html, body {
 }
 
 .container-left .text {
-    margin-top: 16em;
+    margin-top: 14em;
 }
 
 .page2 .circles {
     margin-left: 4em;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .page2 .first-left {
     margin-left: -1em !important;
+}
+
+.circle-wrap {
+    display: none;
 }
