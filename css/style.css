@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
+    padding: 0 !important;
 }
 
 /*first segment*/
@@ -72,6 +73,10 @@ html, body {
     -ms-transition: opacity 2s linear;
     -o-transition: opacity 2s linear;
     transition: opacity 2s linear;
+}
+
+.frontend {
+    color: #393D3F;
 }
 
 /*second segment*/
@@ -167,6 +172,14 @@ html, body {
 }
 
 .container-left .text {
-    margin-top: 12em;
+    margin-top: 16em;
 }
 
+.page2 .circles {
+    margin-left: 4em;
+    margin-top: 3em;
+}
+
+.page2 .first-left {
+    margin-left: -1em !important;
+}

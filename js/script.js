@@ -66,77 +66,31 @@ $(function() {
 
 function loadProgress(load) {
     if(load == 0) {
-        $('#html').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#css').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#javascript').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#java').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#typescript').goalProgress({
-            goalAmount: 100,
-            currentAmount: 70,
-        });
-        $('#dart').goalProgress({
-            goalAmount: 100,
-            currentAmount: 40,
-        });
-        $('#csharp').goalProgress({
-            goalAmount: 100,
-            currentAmount: 50,
-        });
-        $('#spring').goalProgress({
-            goalAmount: 100,
-            currentAmount: 90,
-        });
-        $('#sass').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#jquery').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#nodejs').goalProgress({
-            goalAmount: 100,
-            currentAmount: 60,
-        });
-        $('#angular').goalProgress({
-            goalAmount: 100,
-            currentAmount: 90,
-        });
-        $('#flutter').goalProgress({
-            goalAmount: 100,
-            currentAmount: 50,
-        });
-        $('#mysql').goalProgress({
-            goalAmount: 100,
-            currentAmount: 70,
-        });
-        $('#dotnet').goalProgress({
-            goalAmount: 100,
-            currentAmount: 50,
-        });
-        $('#xd').goalProgress({
-            goalAmount: 100,
-            currentAmount: 100,
-        });
-        $('#illustrator').goalProgress({
-            goalAmount: 100,
-            currentAmount: 90,
-        });
-        $('#photoshop').goalProgress({
-            goalAmount: 100,
-            currentAmount: 60,
-        });
+        loadCircle($('.html'), 1);
+        loadCircle($('.css'), 1);
+        loadCircle($('.javascript'), .9);
+        loadCircle($('.mysql'), .7);
+        loadCircle($('.java'), .9);
+        loadCircle($('.sass'), 1);
+        loadCircle($('.jquery'), .9);
+        loadCircle($('.xd'), 1);
+        loadCircle($('.spring'), .8);
+        loadCircle($('.dart'), .4);
+        loadCircle($('.typescript'), .7);
+        loadCircle($('.csharp'), .5);
+        loadCircle($('.angular'), .9);
+        loadCircle($('.flutter'), .55);
+        loadCircle($('.nodejs'), .66);
+        loadCircle($('.dotnet'), .3);
+        loadCircle($('.illustrator'), .9);
     }
+}
+
+function loadCircle(obj, val) {
+    obj.circleProgress({
+        value: val,
+        size: 100,
+        fill: "#8783D1",
+        lineCap: 'round',
+    });
 }
