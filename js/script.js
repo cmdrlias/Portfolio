@@ -41,3 +41,102 @@ $(document).ready(function() {
         zIndexFront = 0;
     });    
 });
+
+let index = 0;
+
+$(function() {
+    $.scrollify({
+        section : ".page",
+        after:function(i,panels) {
+            var ref = panels[i].attr("data-section-name");
+        
+            if(ref==="page2") {
+                loadProgress(index);
+                index++;
+            }
+            for(var j = 0;j < panels.length;j++) {
+                if(j>i) {
+        
+                //panels[j].find(".moved").removeClass("moved");
+                }
+            }
+        },
+    });
+});
+
+function loadProgress(load) {
+    if(load == 0) {
+        $('#html').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#css').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#javascript').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#java').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#typescript').goalProgress({
+            goalAmount: 100,
+            currentAmount: 70,
+        });
+        $('#dart').goalProgress({
+            goalAmount: 100,
+            currentAmount: 40,
+        });
+        $('#csharp').goalProgress({
+            goalAmount: 100,
+            currentAmount: 50,
+        });
+        $('#spring').goalProgress({
+            goalAmount: 100,
+            currentAmount: 90,
+        });
+        $('#sass').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#jquery').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#nodejs').goalProgress({
+            goalAmount: 100,
+            currentAmount: 60,
+        });
+        $('#angular').goalProgress({
+            goalAmount: 100,
+            currentAmount: 90,
+        });
+        $('#flutter').goalProgress({
+            goalAmount: 100,
+            currentAmount: 50,
+        });
+        $('#mysql').goalProgress({
+            goalAmount: 100,
+            currentAmount: 70,
+        });
+        $('#dotnet').goalProgress({
+            goalAmount: 100,
+            currentAmount: 50,
+        });
+        $('#xd').goalProgress({
+            goalAmount: 100,
+            currentAmount: 100,
+        });
+        $('#illustrator').goalProgress({
+            goalAmount: 100,
+            currentAmount: 90,
+        });
+        $('#photoshop').goalProgress({
+            goalAmount: 100,
+            currentAmount: 60,
+        });
+    }
+}

@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/flip.css">
+        <link rel="stylesheet" href="css/progress.css">
+        <link rel="stylesheet" href="css/goalProgress.css">
     </head>
     <body>
-        <div class="page1">
+        <div class="page page1">
             <div class="left-half"></div>
             <div class="backend">
                 <div class="content">
@@ -19,9 +22,9 @@
                         <div class="col-sm-6">
                             <p>hi, i'm a back-end programmer.</p>
                             <small>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
-                                    Fusce sit amet ultricies augue. Proin nec eros eu nibh accumsan feugiat. Phasellus varius quis nulla 
-                                    ut pharetra. Mauris justo mauris, vestibulum ut dapibus et, efficitur non augue. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
+                                Fusce sit amet ultricies augue. Proin nec eros eu nibh accumsan feugiat. Phasellus varius quis nulla 
+                                ut pharetra. Mauris justo mauris, vestibulum ut dapibus et, efficitur non augue. 
                             </small>
                             <div class="scroll-down d-flex justify-content-center">
                                 <i class="fas fa-chevron-down"></i>
@@ -39,36 +42,134 @@
                         <div class="col-sm-6">
                             <p>hi, i'm a front-end programmer.</p>
                             <small>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
-                                    Fusce sit amet ultricies augue. Proin nec eros eu nibh accumsan feugiat. Phasellus varius quis nulla 
-                                    ut pharetra. Mauris justo mauris, vestibulum ut dapibus et, efficitur non augue. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut rhoncus est, ac commodo arcu. 
+                                Fusce sit amet ultricies augue. Proin nec eros eu nibh accumsan feugiat. Phasellus varius quis nulla 
+                                ut pharetra. Mauris justo mauris, vestibulum ut dapibus et, efficitur non augue. 
                             </small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page2"> 
-            <!-- <div class="bg-left"></div>
-            <div class="bg-right"></div> -->
+        <div class="page page2" data-section-name="page2">
+            <div class="container-left d-flex justify-content-center">
+                <div class="col-6 text-right text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor velit id enim ornare bibendum. Integer 
+                        vitae augue auctor, egestas odio in, placerat velit. Curabitur sagittis lacinia nibh sed blandit. Duis ut 
+                        turpis ac mi vulputate fringilla eu ac urna. Nunc ut molestie ex. Integer non fringilla ipsum, sed tristique nibh.
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="col">
+                    <div class="progressbar">
+                        <small>html</small>
+                        <div id="html"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>css</small>
+                        <div id="css"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>javascript</small>
+                        <div id="javascript"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>java</small>
+                        <div id="java"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>typescript</small>
+                        <div id="typescript"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>dart</small>
+                        <div id="dart"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>c#</small>
+                        <div id="csharp"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>sass</small>
+                        <div id="sass"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>jquery</small>
+                        <div id="jquery"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>spring boot</small>
+                        <div id="spring"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>nodejs</small>
+                        <div id="nodejs"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>angular 2+</small>
+                        <div id="angular"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>flutter</small>
+                        <div id="flutter"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>mysql</small>
+                        <div id="mysql"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>adobe xd</small>
+                        <div id="xd"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>adobe photoshop</small>
+                        <div id="photoshop"></div>
+                    </div>
+                    <div class="progressbar">
+                        <small>adobe illustrator</small>
+                        <div id="illustrator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page page3"> 
+            <div class="bg-left"></div>
+            <div class="bg-right"></div>
             <div class="flip">
                 <div class="rect1 flipper">
-                    <div class="face front"></div>
+                    <div class="face front d-flex justify-content-center">
+                        <div class="education">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur massa vitae ultricies porttitor. 
+                                Nam semper at massa ac commodo. Cras feugiat eleifend nulla in hendrerit.</p>
+                        </div>
+                    </div>
                     <div class="face back"></div>
                 </div>
                 <div class="rect2 flipper">
-                    <div class="front"></div>
+                        <div class="face front d-flex justify-content-center">
+                            <div class="certificates">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur massa vitae ultricies porttitor. 
+                                    Nam semper at massa ac commodo. Cras feugiat eleifend nulla in hendrerit.</p>
+                            </div>
+                        </div>
                     <div class="back"></div>
                 </div>
                 <div class="rect3 flipper">
-                    <div class="front"></div>
+                        <div class="face front d-flex justify-content-center">
+                            <div class="career">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur massa vitae ultricies porttitor. 
+                                    Nam semper at massa ac commodo. Cras feugiat eleifend nulla in hendrerit.</p>
+                            </div>
+                        </div>
                     <div class="back"></div>
                 </div>
-                <div class="rect4 flipper">
+                <!-- <div class="rect4 flipper">
                     <div class="front"></div>
                     <div class="back"></div>
-                </div>
+                </div> -->
             </div>
+        </div>
+        <div class="page page4">
         </div>
 
         <!-- scripts -->
@@ -76,7 +177,9 @@
         <script src="assets/jquery/dist/core.js"></script>
         <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.scrollify.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script src="js/goalProgress.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/scrolling.js"></script>
     </body>
 </html>

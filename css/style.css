@@ -45,13 +45,13 @@ html, body {
     background-color: #393D3F;
     text-align: right;
     z-index: 0;
-    color: #fff;
+    color: #FFFFFA;
 }
 
 .frontend {
     left: 50%;
     text-align: left;
-    background-color: #fff;
+    background-color: #FFFFFA;
     z-index: 1;
 }
 
@@ -81,16 +81,33 @@ html, body {
     top: 100%;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #393D3F;
+    color: #FFFFFA;
 }
 
-/* .bg-left {
+.page3 {
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFA;
+}
+
+.page4 {
+    position: absolute;
+    top: 300%;
+    width: 100%;
+    height: 100%;
+    background-color: #8783D1;
+}
+
+.bg-left {
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
     height: 100%;
-    background: #fff;
+    background: #FFFFFA;
 }
 
 .bg-right {
@@ -99,141 +116,57 @@ html, body {
     right: 0;
     width: 50%;
     height: 100%;
-    background: #CECECE;
-} */
+    background: #393D3F;
+}
 
-.rect1 {
-    position: absolute;
-    top: 0;
-    left:0;
+.education, .certificates, .career {
+    position: relative;
     width: 50%;
-    height: 50%;
+    height: auto;
+    float: left;
+    padding-top: 1em; 
+    margin-top: 5em;
 }
 
-.rect1 .front {
-    background: #CAA8F5;
+.education {
+    background: url("../assets/img/grad_hat.svg") no-repeat;
+    background-size: contain;
+    color: #FFFFFA;
 }
 
-.rect1 .back {
-    background: #EBDFFB;
+.certificates {
+    background: url("../assets/img/quality.svg") no-repeat;
+    background-size: contain;
+    color: #393D3F;
 }
 
-.rect2 {
-    position: absolute;
-    top: 0;
-    right: 0;
+.career {
+    background: url("../assets/img/coding.svg") no-repeat;
+    background-size: contain;
+    color: #8783D1;
+}
+
+.education p, .certificates p, .career p {
+    padding-top: 100%;
+    text-align: center;
+}
+
+.container-left {
+    position: relative;
     width: 50%;
-    height: 50%;
-}
-
-.rect2 .front {
-    background: #87BCDE;
-}
-
-.rect2 .back {
-    background:#D3E6F3;
-}
-
-.rect3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-}
-
-.rect3 .front {
-    background: #B1DDF1;
-}
-
-.rect3 .back {
-    background:#E2F2F9;
-}
-
-.rect4 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-}
-
-.rect4 .front {
-    background: #E0ACD5;
-}
-
-.rect4 .back {
-    background: #F3E0EF;
-}
-
-.rect1 .front, .rect1 .back,
-.rect2 .front, .rect2 .back,
-.rect3 .front, .rect3 .back,
-.rect4 .front, .rect4 .back  {
-    width: 100%;
     height: 100%;
+    float: left;
 }
 
-.rect1 .back,
-.rect2 .back,
-.rect3 .back,
-.rect4 .back {
-    position: absolute;
-    top: 0;
+.container-right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 2em;
 }
 
-.flip .rect1:hover {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+.container-left .text {
+    margin-top: 12em;
 }
 
-.flip .rect2:hover {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.flip .rect3:hover {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.flip .rect4:hover {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.flipper {
-    -webkit-transition: 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 0.6s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 0.6s;
-    -o-transform-style: preserve-3d;
-    transition: 0.6s;
-    transform-style: preserve-3d;
-}
-
-.front, .back {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.back {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
