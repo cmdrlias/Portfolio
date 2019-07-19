@@ -66,6 +66,8 @@ $(function() {
 
 function loadProgress(load) {
     $('.circle-wrap').css('display', 'block');
+    $('.page2 .text').css('opacity', '1');
+    
     if(load == 0) {
         loadCircle($('.html'), 1);
         loadCircle($('.css'), 1);

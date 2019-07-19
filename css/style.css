@@ -187,3 +187,16 @@ html, body {
 .circle-wrap {
     display: none;
 }
+
+.page2 .text {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.carousel .text {
+    position: absolute;
+    top: 4em;
+    left: 14em;
+    font-weight: 300;
+    width: 20%;
+}
