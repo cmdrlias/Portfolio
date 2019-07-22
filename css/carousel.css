@@ -5,10 +5,10 @@ html, body {
 .carousel {
     width: 100%;
     display: inline-flex;
-    margin: 4em 0 0 -4em;
+    margin: 1em 0 0 -4em;
 }
 .carousel .macbook {
-    width: 35em;
+    width: 30em;
     height: 20em;
     background: url("../assets/img/macbook.png") no-repeat;
     background-size: contain;
@@ -18,21 +18,21 @@ html, body {
 .carousel .macbook .screen {
     background-color: transparent;
     color: white;
-    width: 25.5em;
-    height: 16em;
-    margin-left: 4.9em;
-    margin-top: 1.25em;
+    width: 21.9em;
+    height: 13.8em;
+    margin-left: 4.1em;
+    margin-top: 1.05em;
 }
 .carousel .macbook .screen .screen-img {
-    width: 25.5em;
+    width: 21.9em;
     height: auto;
     float: left;
     position: absolute;
 }
 
 .carousel .imac {
-    width: 40em;
-    height: 35em;
+    width: 35.1em;
+    height: 30em;
     background: url("../assets/img/imac.png") no-repeat;
     background-size: contain;
     margin-left: -7em;
@@ -41,13 +41,13 @@ html, body {
 .carousel .imac .screen {
     background-color: transparent;
     color: white;
-    width: 37.2em;
+    width: 32.8em;
     height: 20.9em;
-    margin-left: 1.45em;
-    margin-top: 1.45em;
+    margin-left: 1.25em;
+    margin-top: 1.3em;
 }
 .carousel .imac .screen .screen-img {
-    width: 37.2em;
+    width: 32.8em;
     height: auto;
     float: left;
     position: absolute;
